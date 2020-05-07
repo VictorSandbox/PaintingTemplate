@@ -1,0 +1,212 @@
+body {
+  /* color: #000; */
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* Home Page - Menu Section */
+#nav {
+  border-bottom: #4682b4 3px solid;
+  background-color: #4682b4;
+}
+
+.button {
+  background-color: #4682b4;
+  color: yellow!important;
+  padding: 0.6em 1.5em;
+  text-decoration: none;
+
+  /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+}
+
+#nav ul li a {
+  color:rgb(199, 210, 231)
+}
+
+#nav ul li a:hover {
+  /* background: #5e5e5e;  */
+  color: #fff;
+  /* border: #fff 1px solid; */
+}
+
+/* HomePage - Showcase Section */
+
+/* https://stackoverflow.com/questions/38038056/adding-a-background-image-just-below-the-navigation-bar */
+/* https://medium.com/@leannezhang/difference-between-css-position-absolute-versus-relative-35f064384c6 */
+/* https://css-tricks.com/almanac/properties/b/background-position/ */
+#homepage-showcase div {
+  /* image size 1920X1276 */
+  background: url(../img/micah-carlson-medium-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 700px;
+  /* showcase border */
+  border-bottom: #4682b4 3px solid;
+  /* top: 0px;
+  left: 0px; */
+  position: relative;
+  /* background-position: 0 30px; */
+  background-position: center center;
+  opacity: 0.8;
+}
+
+#explore-section {
+  border-bottom: #4682b4 3px solid;
+  opacity: 0.8;
+}
+
+#explore-section .fa {
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Services/Portfolio Page  */
+#company-services a[href="Services.html"] {
+  color: #166db4;
+}
+
+#company-services ul {
+  padding-right: 1.7rem;
+  padding-left:1rem;
+}
+
+#company-services ul li {
+ list-style: none;
+ padding-bottom:1.5rem;
+ padding-left:0.5rem;
+}
+
+#company-services ul li a {
+  line-height: 1.2rem;
+  margin-bottom: 0.5rem; 
+}
+
+/* https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional */
+.responsive {
+  /* max-width: 100%; */
+  /* height: auto;  */
+  object-fit: cover;
+  width: 100%;
+  /* max-height: 90%; */
+}
+
+/* About Page */
+#about-section ul li{
+  list-style: none;
+}
+
+.counts .count-box {
+  box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+/* Footer Section  - All Pages */
+#footer-section {
+  /* background-color: rgba(70, 130, 180, 0.2); */
+  padding: 0.5rem;
+  background-color: #4682b4;
+  /* color: #fff; */
+  color:rgb(199, 210, 231)
+}
+
+#footer-section i[class^=fa] {      
+  margin-right: 0.6rem;
+}
+
+#footer-section a {
+  /* color: #fff; */
+  color:rgb(199, 210, 231);
+  margin-bottom: 0px;
+}
+
+
+#footer-section p a:hover {
+  /* background: #5e5e5e;  */
+  color: #fff;
+  text-decoration: none;
+  /* border: #fff 1px solid; */
+}
+
+#footer-section p {
+  margin-bottom: 0.5rem;
+}
+
+#footer-section p:hover {
+  margin-bottom: 0.5rem;
+  color:#fff;
+}
+
+/* Breakpoint Responsiveness */
+/* https://www.creative-tim.com/blog/web-design/bootstrap-background-image/ */
+/* https://www.webfx.com/blog/web-design/responsive-background-image// */
+/* https://www.sitepoint.com/community/t/solved-background-color-overrides-background-image/196594 */
+/* https://stackoverflow.com/questions/18606473/css-scale-down-image-to-fit-in-containing-div-without-specifing-original-size */
+
+/* https://stackoverflow.com/questions/48383368/how-can-i-change-the-size-of-the-font-in-bootstrap-4-with-just-css */
+
+
+/* Mobile Response  Small Screen */
+@media only screen and (max-width: 575.98px) { 
+  #homepage-showcase div {
+    background: url(../img/micah-carlson-small-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 249px;  
+    opacity: 0.8;
+  } 
+
+  #homepage-showcase p, #about-headline-section p, #about-section p, #clients p, #counter p {
+    font-size:5vw;  
+  }
+
+  #explore-section div[class^=row] {
+   margin-top: 0;
+  }
+
+  #explore-section i[class^=fa] {
+    font-size:6vw;  
+  }
+
+  #explore-section h2 {
+    font-size:1.5rem;
+  }
+
+  #explore-section p {
+    text-align: justify;
+    font-size:1rem;
+  }
+
+  #about-headline-section h1{
+    font-size:1.8rem
+  }
+
+  #about-section h3{
+    font-size:1.3rem
+  }
+
+  #clients h2 {
+    font-size:1.3rem
+  }
+  
+  #footer-section p { 
+    font-size:1rem;
+    text-align: center;
+  }
+
+  #footer-section h5{
+    text-align: center;
+  }
+
+  #footer-section h4{
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  #footer-section i[class^=fa] {      
+    margin-right: 0.6rem;
+  }
+}
+

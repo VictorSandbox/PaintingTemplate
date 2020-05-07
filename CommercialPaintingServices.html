@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Shared Host or netlify -->
+  <!-- colorlib.cp,/wp/bootstrap-footer - bootstrap template -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/custom_style.css" />
+    <title>Comercial Services</title>
+  </head>
+  <body>
+    <!-- Start Here -->
+    <header class="mb-4" id="nav">
+      <nav class="navbar navbar-expand-sm navbar-light mm">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">JRB</a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUS.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="InteriorPaintingServices.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button" href="ContactUs.html">FREE QUOTE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Services Page - List of Company Services -->
+    <!-- https://medium.com/@js_tut/the-complete-css-flex-box-tutorial-d17971950bdc -->
+    <section id="company-services">
+      <div class="container">
+        <!-- project list and slide of projects -->
+        <div class="row">
+          <div class="col-sm-3 d-flex flex-column">
+            <!-- <div class="d-flex flex-column align-self-center"> -->
+            <div class="w-100">
+              <ul class="d-flex flex-column align-items-end">
+                <h2>Services</h2>
+                <li>
+                  <a href="InteriorPaintingServices.html" class="active"
+                    ><i class="fas fa-paint-roller"></i> Interior</a
+                  >
+                </li>
+
+                <li>
+                  <a href="ExteriorPaintingServices.html">Exterior</a>
+                </li>
+
+                <li>
+                  <a href="CommercialPaintingServices.html"
+                    >Commercial Painting</a
+                  >
+                </li>
+
+                <li><a href="FauxServices.html">Faux Services</a></li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column align-self-center my-5">
+              <!-- https://thoughtbot.com/blog/positioning -->
+
+              <!--      <button type="button" class="btn btn-primary">GET A QUOTE</button> -->
+              <a href="ContactUs.html" class="btn btn-primary btn-block mr-3">
+                GET A QUOTE</a
+              >
+            </div>
+          </div>
+          <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_responsive2 -->
+          <div class="col">
+            <div>
+              <img
+                src="./img/photo-of-an-empty-room-3935349.jpg"
+                alt="Interion_Painting_Home"
+                class="responsive"
+              />
+            </div>
+            <div>
+              <h3>Description</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat officiis iusto nostrum aspernatur natus ad suscipit
+              </p>
+              <h3>Benefits</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat officiis iusto nostrum aspernatur natus ad suscipit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- showcase with overlay(to shadow or lighten image with other div) - see example in local PC -->
+      <!-- <div class="dark-overlay"> -->
+      <!-- <div class="section-content"></div> -->
+      <!-- </div>  -->
+    </section>
+
+    <!-- footer -->
+    <footer id="footer-section">
+      <!-- footer first columns -->
+      <div class="container">
+        <div class="row">
+          <!-- <h4 class="ml-2">Contact Us</h4> -->
+        </div>
+        <div class="row mt-3">
+          <!-- first footer columns -->
+          <div class="col-sm-4">
+            <h5>JRB Painting</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+            </p>
+          </div>
+          <!-- second footer  columns -->
+          <div class="col-sm-4">
+            <p><a href="AboutUS.html"> About Us</a></p>
+            <p><a href="InteriorPaintingServices.html"> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+          </div>
+          <!-- third footer columns -->
+          <div class="col-sm-4">
+            <h4>Contact Us</h4>
+            <p><i class="fa fa-phone"></i>512-259-1554</p>
+            <p>
+              <i class="fa fa-envelope-o"></i
+              ><a href="mailto:jrbpainting.net"> info@jrbpainting.net</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer copyright -->
+      <div class="footer-copyright">
+        <div class="container text-center">
+          <p class="bold">
+            Copyright &copy; <span id="year"></span> - JRB Painting, LLC.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get current year of the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>

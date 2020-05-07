@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Shared Host or netlify -->
+  <!-- colorlib.cp,/wp/bootstrap-footer - bootstrap template -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/custom_style.css" />
+    <title>JRB Painting</title>
+  </head>
+  <body>
+    <!-- Start Here -->
+    <header id="nav">
+      <nav class="navbar navbar-expand-sm navbar-light mm">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">JRB</a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUS.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="InteriorPaintingServices.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button" href="ContactUs.html">FREE QUOTE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- showcase section - Contact Us Page  -->
+    <section id="contactus-showcase">
+      <div class="inner"></div>
+    </section>
+
+    <!-- Form section -->
+    <section id="form-section">
+      <div class="container">
+        <div class="d-flex flex-column pt-3">
+          <h1 class="d-flex justify-content-center">Contact us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            aperiam non ducimus, accusamus possimus officia a in hic corporis
+            sapiente incidunt autem sint ex nam ipsam, similique laboriosam rem
+            voluptatum!
+          </p>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form>
+            <!-- Your Name field -->
+            <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+            <!-- Your phoneNumber -->
+            <div class="form-group">
+              <label for="tel">Phone Number:</label>
+              <input type="tel" value="(555)-555-5555" class="form-control" id="tel">
+            </div>
+            <!-- Your Email address -->
+
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="John_Hop@email.com" id="email">
+            </div>
+            <!-- What Project Are You Interested In?  -->
+            <div class="form-group">
+              <label for="exampleSelect1">Example select</label>
+              <select class="form-control" id="exampleSelect1">
+                <option>Exterior</option>
+                <option>Interior</option>
+                <option>Commercial</option>
+              </select>
+            </div>
+            <!-- Any Comments?  -->
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            
+            <!-- Submit Your Question -->
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer-section" class="mt-4 pb-4">
+      <!-- footer first columns -->
+      <div class="container">
+        <div class="row">
+          <!-- <h4 class="ml-2">Contact Us</h4> -->
+        </div>
+        <div class="row mt-3">
+          <!-- first footer columns -->
+          <div class="col-sm-4">
+            <h5>JRB Painting</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+            </p>
+          </div>
+
+          <!-- second footer  columns -->
+          <div class="col-sm-4">
+            <p><a href="AboutUS.html"> About Us</a></p>
+            <p><a href="InteriorPaintingServices.html"> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+          </div>
+          <!-- third footer columns -->
+          <div class="col-sm-4">
+            <h4>Contact Us</h4>
+            <p><i class="fa fa-phone"></i>512-259-1554</p>
+            <p>
+              <i class="fa fa-envelope-o"></i
+              ><a href="mailto:jrbpainting.net"> info@jrbpainting.net</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer copyright -->
+      <div class="footer-copyright">
+        <div class="container text-center">
+          <p class="bold">
+            Copyright &copy; <span id="year"></span> - JRB Painting, LLC.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get current year of the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
